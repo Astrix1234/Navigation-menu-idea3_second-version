@@ -1,0 +1,60 @@
+.menu {
+  position: absolute;
+  translate: 100px 150px;
+  transition: scale 2000ms ease-in-out, visibility 2000ms ease-in-out,
+    opacity 2000ms ease-in-out;
+}
+li {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: rgb(0, 0, 216);
+  }
+
+  &:nth-child(1) {
+    translate: 110px 70px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 104px solid rgb(129, 255, 255);
+    & > p {
+      margin-top: 160px;
+    }
+    rotate: -60deg;
+  }
+  &:nth-child(2) {
+    translate: 80px 150px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 130px solid rgb(129, 255, 255);
+    & > p {
+      margin-top: 210px;
+    }
+    rotate: -30deg;
+  }
+  &:nth-child(3) {
+    translate: 0px 150px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 180px solid rgb(129, 255, 255);
+    & > p {
+      margin-top: 310px;
+    }
+  }
+  &:nth-child(4) {
+    translate: -70px 110px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 130px solid rgb(129, 255, 255);
+    & > p {
+      margin-top: 210px;
+    }
+    rotate: 30deg;
+  }
+}
